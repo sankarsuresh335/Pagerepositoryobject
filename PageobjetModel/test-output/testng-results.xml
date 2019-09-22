@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18149" started-at="2019-09-21T12:51:43 CDT" finished-at="2019-09-21T12:52:02 CDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18149" started-at="2019-09-21T12:51:43 CDT" finished-at="2019-09-21T12:52:02 CDT">
+      <class name="Testcase.Userprofile">
+        <test-method status="PASS" signature="usermethod()[pri:0, instance:Testcase.Userprofile@67b92f0a]" name="usermethod" duration-ms="18068" started-at="2019-09-21T12:51:44 CDT" finished-at="2019-09-21T12:52:02 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usermethod -->
+      </class> <!-- Testcase.Userprofile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
