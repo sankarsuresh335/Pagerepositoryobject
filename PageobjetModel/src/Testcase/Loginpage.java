@@ -1,9 +1,9 @@
 package Testcase;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import Pageobject.Loginpageobject;
@@ -17,18 +17,19 @@ public class Loginpage {
 		RemoteWebDriver driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		driver.manage().window().maximize();
+
 		
+		PageFactory.initElements(driver,Loginpageobject.class);
 		
-		Loginpageobject.username(driver).sendKeys("Admin");
-		
-		Loginpageobject.password(driver).sendKeys("admin123");
-		
-		Loginpageobject.loginbutton(driver).click();
+
+		Loginpageobject.username.sendKeys("Admin");
+		Loginpageobject.password.sendKeys("admin123");
+		Loginpageobject.loginbutton.click();
 		
 		
 		
 
-		/*WebElement username = driver.findElement(By.id("txtUsername"));
+	/*	WebElement username = driver.findElement(By.id("txtUsername"));
 
 		username.sendKeys("Admin");
 

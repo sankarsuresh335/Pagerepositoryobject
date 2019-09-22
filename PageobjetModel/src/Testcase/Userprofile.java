@@ -1,9 +1,9 @@
 package Testcase;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import Pageobject.Loginpageobject;
@@ -19,25 +19,32 @@ public class Userprofile {
 		driver.get("https://opensource-demo.orangehrmlive.com");
 		driver.manage().window().maximize();
 
-		Loginpageobject.username(driver).sendKeys("Admin");
+		PageFactory.initElements(driver,Loginpageobject.class);
+		
+		Loginpageobject.username.sendKeys("Admin");
 
-		Loginpageobject.password(driver).sendKeys("admin123");
+		Loginpageobject.password.sendKeys("admin123");
 
-		Loginpageobject.loginbutton(driver).click();
+		Loginpageobject.loginbutton.click();
 
-		Userprofileobject.admin(driver).click();
+		
+		
+		PageFactory.initElements(driver,Userprofileobject.class);
+		
+		
+		Userprofileobject.admin.click();
 
-		Userprofileobject.add(driver).click();
+		Userprofileobject.add.click();
 
-		Userprofileobject.empname(driver).sendKeys("sankar");
+		Userprofileobject.empname.sendKeys("sankar");
 
-		Userprofileobject.username1(driver).sendKeys("sankarsuresh");
+		Userprofileobject.username1.sendKeys("sankarsuresh");
 
-		Userprofileobject.password1(driver).sendKeys("Qualityqac@1988");
+		Userprofileobject.password1.sendKeys("Qualityqac@1988");
 
-		Userprofileobject.passwordcomp(driver).sendKeys("Qualityqac@1988");
+		Userprofileobject.passwordcomp.sendKeys("Qualityqac@1988");
 
-		Userprofileobject.save(driver).click();
+		Userprofileobject.save.click();
 
 		/*
 		 * WebElement username = driver.findElement(By.id("txtUsername"));
