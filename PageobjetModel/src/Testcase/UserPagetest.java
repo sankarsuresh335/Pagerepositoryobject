@@ -5,26 +5,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import CommanFuction.Commen_fuction_Pro;
 import Pageobject.LoginPageObject;
 import Pageobject.UserpagePageObject;
 
-public class UserPagetest {
+public class UserPagetest extends Commen_fuction_Pro {
 
 	@Test
 	public void New_User_upadte() throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.get("http://demo.guru99.com/V4/");
 
 		PageFactory.initElements(driver, LoginPageObject.class);
 
-		LoginPageObject.Username.sendKeys("mngr226415");
-
-		LoginPageObject.password.sendKeys("yqyrUdA");
-
+        LoginPageObject.Username.sendKeys(properties.getProperty("username"));
+		
+		LoginPageObject.password.sendKeys(properties.getProperty("password"));
+		
 		LoginPageObject.Loginbutton.click();
 
+		Thread.sleep(3000);
 		PageFactory.initElements(driver, UserpagePageObject.class);
 
 		UserpagePageObject.Newcustomer.click();

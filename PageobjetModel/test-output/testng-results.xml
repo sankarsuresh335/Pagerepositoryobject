@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19413" started-at="2019-10-01T19:38:44 CDT" finished-at="2019-10-01T19:39:03 CDT">
+  <suite name="Default suite" duration-ms="6335" started-at="2019-10-02T00:21:55 CDT" finished-at="2019-10-02T00:22:02 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19413" started-at="2019-10-01T19:38:44 CDT" finished-at="2019-10-01T19:39:03 CDT">
+    <test name="Default test" duration-ms="6335" started-at="2019-10-02T00:21:55 CDT" finished-at="2019-10-02T00:22:02 CDT">
       <class name="Testcase.UserPagetest">
-        <test-method status="PASS" signature="New_User_upadte()[pri:0, instance:Testcase.UserPagetest@5abca1e0]" name="New_User_upadte" duration-ms="19329" started-at="2019-10-01T19:38:44 CDT" finished-at="2019-10-01T19:39:03 CDT">
+        <test-method status="PASS" signature="lunchbrowers()[pri:0, instance:Testcase.UserPagetest@18eed359]" name="lunchbrowers" is-config="true" duration-ms="15188" started-at="2019-10-02T00:21:40 CDT" finished-at="2019-10-02T00:21:55 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchbrowers -->
+        <test-method status="PASS" signature="New_User_upadte()[pri:0, instance:Testcase.UserPagetest@18eed359]" name="New_User_upadte" duration-ms="6289" started-at="2019-10-02T00:21:55 CDT" finished-at="2019-10-02T00:22:02 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- New_User_upadte -->
+        <test-method status="PASS" signature="tearbrower()[pri:0, instance:Testcase.UserPagetest@18eed359]" name="tearbrower" is-config="true" duration-ms="786" started-at="2019-10-02T00:22:02 CDT" finished-at="2019-10-02T00:22:03 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearbrower -->
       </class> <!-- Testcase.UserPagetest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
