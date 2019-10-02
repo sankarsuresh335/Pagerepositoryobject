@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16111" started-at="2019-09-22T00:50:49 CDT" finished-at="2019-09-22T00:51:05 CDT">
+  <suite name="Default suite" duration-ms="19413" started-at="2019-10-01T19:38:44 CDT" finished-at="2019-10-01T19:39:03 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16111" started-at="2019-09-22T00:50:49 CDT" finished-at="2019-09-22T00:51:05 CDT">
-      <class name="Testcase.Userprofile">
-        <test-method status="PASS" signature="usermethod()[pri:0, instance:Testcase.Userprofile@67b92f0a]" name="usermethod" duration-ms="16026" started-at="2019-09-22T00:50:49 CDT" finished-at="2019-09-22T00:51:05 CDT">
+    <test name="Default test" duration-ms="19413" started-at="2019-10-01T19:38:44 CDT" finished-at="2019-10-01T19:39:03 CDT">
+      <class name="Testcase.UserPagetest">
+        <test-method status="PASS" signature="New_User_upadte()[pri:0, instance:Testcase.UserPagetest@5abca1e0]" name="New_User_upadte" duration-ms="19329" started-at="2019-10-01T19:38:44 CDT" finished-at="2019-10-01T19:39:03 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usermethod -->
-      </class> <!-- Testcase.Userprofile -->
+        </test-method> <!-- New_User_upadte -->
+      </class> <!-- Testcase.UserPagetest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
